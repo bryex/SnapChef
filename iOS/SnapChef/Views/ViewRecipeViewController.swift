@@ -145,6 +145,7 @@ class ViewRecipeViewController: UIViewController{
         }
     }
     private func highlightFirstLineInTextView(textView: UITextView) {
+
         let textAsNSString = textView.text as NSString
         let lineBreakRange = textAsNSString.range(of: ":\n")
         let newAttributedText = NSMutableAttributedString(attributedString: textView.attributedText)
